@@ -78,4 +78,7 @@ theme: cactus-white
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:kendallcorner/kendallcorner.github.io
+  branch: gh-pages
+  message:
