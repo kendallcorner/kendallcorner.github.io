@@ -80,5 +80,5 @@ theme: cactus-white
 deploy:
   type: git
   repo: git@github.com:kendallcorner/kendallcorner.github.io
-  branch: gh-pages
+  branch: master
   message:
