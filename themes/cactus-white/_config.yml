@@ -2,34 +2,34 @@ nav:
   Home: /
   About: /about/
   Writing: /posts/
-  Projects: http://github.com/sergodeeva
+  Projects: http://github.com/kendallcorner
 
-projects_url: http://github.com/sergodeeva
+projects_url: http://github.com/kendallcorner
 
 customize:
     gravatar:
-        email: 
+        email: kmwerts@gmail.com
     logo:
         enabled: true
         width: 50
         height: 50
         url: /images/logo.png
-        gravatar: false
+        gravatar: true
     favicon: 
       # eg. generate with http://realfavicongenerator.net/
       desktop:
         url: /images/favicon.ico
-        gravatar: false
+        gravatar: true
       android:
         url: /images/favicon-192x192.png
-        gravator: false
+        gravatar: true
       apple:
         url: /images/apple-touch-icon.png
-        gravator: false
+        gravatar: false
     social_links:
-        github: http://github.com/sergodeeva
-        facebook: /
-        linkedin: https://www.linkedin.com/in/natalyakosenko/
+        github: https://github.com/kendallcorner
+        twitter: https://twitter.com/kendallcorner
+        linkedin: https://www.linkedin.com/in/kendallwerts/
     show_all_posts: false
     post_count: 10
     highlight: pojoaque
@@ -40,7 +40,7 @@ rss: false
 # Plugins
 plugins:
     disqus_shortname: # Disqus Comments Shortname
-    google_analytics: UA-37473492-6 # enter the tracking ID for your Google Analytics
+    google_analytics: UA-33031016-1
 
 # Miscellaneous
 miscellaneous:
