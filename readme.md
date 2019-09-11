@@ -8,13 +8,17 @@ git clone git@github.com:kendallcorner/kendallcorner.github.io.git
 npm install
 ```
 
-To develop information at [hexo.io](https://hexo.io)
+To develop: information at [hexo.io](https://hexo.io)
 
-```hexo serve```
+```
+hexo serve
+```
 with automatic updates
 
 New page:
-```hexo new post [name]```
+```
+hexo new post [name]
+```
 
 
 to deploy:
