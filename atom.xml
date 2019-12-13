@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>kendallcorner</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://kendallcorner.com/"/>
+  <updated>2019-09-10T21:12:31.681Z</updated>
+  <id>http://kendallcorner.com/</id>
+  
+  <author>
+    <name>Kendall Werts</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Welcome</title>
+    <link href="http://kendallcorner.com/2019/09/10/welcome/"/>
+    <id>http://kendallcorner.com/2019/09/10/welcome/</id>
+    <published>2019-09-10T19:56:22.000Z</published>
+    <updated>2019-09-10T21:12:31.681Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hi-There"><a href="#Hi-There" class="headerlink" title="Hi There."></a>Hi There.</h1><p>I’m a trained Chemical Engineer (PE) who is working to become a full time developer. </p><p>When I first started college I wanted to be a computer science major, but some things got in my way. I also really like Chemical Engineering and have had a lot of fun in that field, but I really like programming as well.</p><p>Since college, I have always done some amount of programming. At first it was just running my own website. At my first job I worked on some engineering code that was built in Fortran, C, C++, and Python. I’ve always tried to fit a little development into whatever chemical engineering job I held at the time—usually building apps to make my job easier! I have also volunteered for Code for Tulsa and Oklahoma’s Technology foundation: Techlahoma.</p><p>Because of my unique background, I’ve been able to develop some apps that might be usefully to a chemical engineer. I hope to release them soon.</p><p>I hope you like my site!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hi-There&quot;&gt;&lt;a href=&quot;#Hi-There&quot; class=&quot;headerlink&quot; title=&quot;Hi There.&quot;&gt;&lt;/a&gt;Hi There.&lt;/h1&gt;&lt;p&gt;I’m a trained Chemical Engineer (PE) who is 
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Developing a programming path</title>
+    <link href="http://kendallcorner.com/2019/09/10/programming-path/"/>
+    <id>http://kendallcorner.com/2019/09/10/programming-path/</id>
+    <published>2019-09-10T19:54:21.000Z</published>
+    <updated>2019-09-17T22:17:10.817Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Learning-Program"><a href="#Learning-Program" class="headerlink" title="Learning Program"></a>Learning Program</h2><p>I am most familar with Python and JavaScript, so I am going to focus on those two languages. Here is where I want to start.</p><h2 id="Free-Code-Camp"><a href="#Free-Code-Camp" class="headerlink" title="Free Code Camp"></a>Free Code Camp</h2><a href="https://learn.freecodecamp.org" target="_blank" rel="noopener">Free Code Camp</a> has some very beginner lessons, but it also has some more advanced information, and it seems like an excellent resource to fill in the gaps. I will be going through the curriculum and skipping items that seem rudimentary or that I already know. I'd like to cover lessons like:<ol><li><del>Review any gaps in basic HTML and CSS</del></li><li><del>Flexbox, Responsive design, Assessibility, Responsive Web Design Projects</del></li><li>Review of JS algorithms and datastructures</li><li>Front End Libraries</li><li>Data Visualization</li><li>APIs and microservices</li><li>Information Security</li></ol><h2 id="What-I-want-to-learn-next"><a href="#What-I-want-to-learn-next" class="headerlink" title="What I want to learn next:"></a>What I want to learn next:</h2><h3 id="Databases"><a href="#Databases" class="headerlink" title="Databases"></a>Databases</h3><ol><li><a href="https://www.udemy.com/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/" target="_blank" rel="noopener">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</a>  </li></ol><ol start="2"><li><a href="http://zetcode.com/databases/mysqltutorial/" target="_blank" rel="noopener">MySQL tutorial</a>  </li></ol><h3 id="Flask-and-Django"><a href="#Flask-and-Django" class="headerlink" title="Flask and Django"></a>Flask and Django</h3><ol><li><a href="https://www.udemy.com/course/rest-api-flask-and-python/" target="_blank" rel="noopener">REST APIs with Flask and Python</a>  </li></ol><ol start="2"><li><a href="https://www.udemy.com/python-and-django-full-stack-web-developer-bootcamp/" target="_blank" rel="noopener">Python and Django Full Stack Web Developer Bootcamp</a>  </li></ol><h3 id="A-stack-with-React-or-other-JavaScript"><a href="#A-stack-with-React-or-other-JavaScript" class="headerlink" title="A stack with React or other JavaScript"></a>A stack with React or other JavaScript</h3><ol><li><a href="https://www.coursera.org/specializations/full-stack-react" target="_blank" rel="noopener">This course</a>  </li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Learning-Program&quot;&gt;&lt;a href=&quot;#Learning-Program&quot; class=&quot;headerlink&quot; title=&quot;Learning Program&quot;&gt;&lt;/a&gt;Learning Program&lt;/h2&gt;&lt;p&gt;I am most fami
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://kendallcorner.com/2019/09/10/hello-world/"/>
+    <id>http://kendallcorner.com/2019/09/10/hello-world/</id>
+    <published>2019-09-10T18:44:58.865Z</published>
+    <updated>2019-09-10T18:44:58.865Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
