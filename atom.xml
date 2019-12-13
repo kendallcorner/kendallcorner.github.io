@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kendallcorner.com/"/>
-  <updated>2019-12-13T18:49:23.237Z</updated>
+  <updated>2019-12-13T19:42:04.665Z</updated>
   <id>http://kendallcorner.com/</id>
   
   <author>
@@ -21,13 +21,23 @@
     <link href="http://kendallcorner.com/2019/12/13/Sync-Process/"/>
     <id>http://kendallcorner.com/2019/12/13/Sync-Process/</id>
     <published>2019-12-13T18:49:23.000Z</published>
-    <updated>2019-12-13T18:49:23.237Z</updated>
+    <updated>2019-12-13T19:42:04.665Z</updated>
+    
+    <content type="html"><![CDATA[<p>My first task with the Multi Account Containers project is to enable “Sync” with the containers. </p><p>We discussed a few different paths here including using the container name as a unique identifier.</p><p>The initial sync on versions of the addon that have never been synced will add a uuid for each of the containers and match all assigned sites to the containers</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;My first task with the Multi Account Containers project is to enable “Sync” with the containers. &lt;/p&gt;
+&lt;p&gt;We discussed a few different pat
+      
     
     </summary>
     
     
+    
+      <category term="Outreachy, Mozilla, Multi Account Containers" scheme="http://kendallcorner.com/tags/Outreachy-Mozilla-Multi-Account-Containers/"/>
     
   </entry>
   
@@ -36,7 +46,7 @@
     <link href="http://kendallcorner.com/2019/12/13/Outreachy-Application/"/>
     <id>http://kendallcorner.com/2019/12/13/Outreachy-Application/</id>
     <published>2019-12-13T18:34:26.000Z</published>
-    <updated>2019-12-13T19:23:15.375Z</updated>
+    <updated>2019-12-13T19:42:04.665Z</updated>
     
     <content type="html"><![CDATA[<p>I have wanted to be a programmer for a long time. It was my original major choice, but due to various issues, I didn’t end up going down that path. But I’ve always tried to do a little development on the side or to help with me my job, so when I was laid off from my engineering job in June, I realized I had a few months to really try to train myself up and become a real-live developer. I took some online courses, worked on my own web apps, and got lots of help and advice from my programmer friends. I even tried my hand at some contributions to open source. This was when I was told about the Outreachy program.</p><p>I applied and was accepted to the second round of applications where the applicants get to submit to different projects to figure out which projects they like, and in turn, the project mentors get to figure out which applicants have the needed skills and fit well with their working style. Overall this seems very much like a code interview might be, except that if your work is good it actually gets used in the project. The only downside to this is no time limit was put on this, so people who are  going to school, otherwise employed, or have kids may not have the same available time to make a solid contribution. In that respect, I feel very lucky that my husband has a good job and I can take this time off, not only to apply for Outreachy, but also to try this career change!</p><p>They closed the second round applictaion about a month before the internship started to give the mentors a few weeks to decide. I was ready to hear back right away, but alas, I had to wait! The week of Thanksgiving I heard back that I was accepted on Firefox’s Multi Account Containers Addon project. I am very excited to be working with a company so full of talent like Mozilla.</p>]]></content>
     
@@ -60,7 +70,7 @@
     <link href="http://kendallcorner.com/2019/09/10/welcome/"/>
     <id>http://kendallcorner.com/2019/09/10/welcome/</id>
     <published>2019-09-10T19:56:22.000Z</published>
-    <updated>2019-12-13T18:43:19.173Z</updated>
+    <updated>2019-12-13T19:42:04.665Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Hi-There"><a href="#Hi-There" class="headerlink" title="Hi There."></a>Hi There.</h1><p>I’m a trained Chemical Engineer (PE) who is working to become a full time developer. </p><p>When I first started college I wanted to be a computer science major, but some things got in my way. I also really like Chemical Engineering and have had a lot of fun in that field, but I really like programming as well.</p><p>Since college, I have always done some amount of programming. At first it was just running my own website. At my first job I worked on some engineering code that was built in Fortran, C, C++, and Python. I’ve always tried to fit a little development into whatever chemical engineering job I held at the time—usually building utilities to make my job easier! I have also volunteered for Code for Tulsa and Oklahoma’s Technology foundation: Techlahoma.</p><p>Because of my unique background, I’ve been able to develop some apps that might be usefully to a chemical engineer. I hope to release them soon.</p><p>I hope you like my site!</p>]]></content>
     
@@ -82,7 +92,7 @@
     <link href="http://kendallcorner.com/2019/09/10/programming-path/"/>
     <id>http://kendallcorner.com/2019/09/10/programming-path/</id>
     <published>2019-09-10T19:54:21.000Z</published>
-    <updated>2019-12-13T18:43:57.057Z</updated>
+    <updated>2019-12-13T19:42:04.665Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Learning-Program"><a href="#Learning-Program" class="headerlink" title="Learning Program"></a>Learning Program</h2><p>I am most familar with Python and JavaScript, so I am going to focus on those two languages. Here is where I want to start.</p><h2 id="Free-Code-Camp"><a href="#Free-Code-Camp" class="headerlink" title="Free Code Camp"></a>Free Code Camp</h2><a href="https://learn.freecodecamp.org" target="_blank" rel="noopener">Free Code Camp</a> has some very beginner lessons, but it also has some more advanced information, and it seems like an excellent resource to fill in the gaps. I will be going through the curriculum and skipping items that seem rudimentary or that I already know. I'd like to cover lessons like:<ol><li>Review any gaps in basic HTML and CSS</li><li>Flexbox, Responsive design, Assessibility, Responsive Web Design Projects</li><li>Review of JS algorithms and datastructures</li><li>Front End Libraries</li><li>Data Visualization</li><li>APIs and microservices</li><li>Information Security</li></ol><h2 id="What-I-want-to-learn-next"><a href="#What-I-want-to-learn-next" class="headerlink" title="What I want to learn next:"></a>What I want to learn next:</h2><h3 id="Databases"><a href="#Databases" class="headerlink" title="Databases"></a>Databases</h3><ol><li><a href="https://www.udemy.com/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/" target="_blank" rel="noopener">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</a>  </li></ol><ol start="2"><li><a href="http://zetcode.com/databases/mysqltutorial/" target="_blank" rel="noopener">MySQL tutorial</a>  </li></ol><h3 id="Flask-and-Django"><a href="#Flask-and-Django" class="headerlink" title="Flask and Django"></a>Flask and Django</h3><ol><li><a href="https://www.udemy.com/course/rest-api-flask-and-python/" target="_blank" rel="noopener">REST APIs with Flask and Python</a>  </li></ol><ol start="2"><li><a href="https://www.udemy.com/python-and-django-full-stack-web-developer-bootcamp/" target="_blank" rel="noopener">Python and Django Full Stack Web Developer Bootcamp</a>  </li></ol><h3 id="A-stack-with-React-or-other-JavaScript"><a href="#A-stack-with-React-or-other-JavaScript" class="headerlink" title="A stack with React or other JavaScript"></a>A stack with React or other JavaScript</h3><ol><li><a href="https://www.coursera.org/specializations/full-stack-react" target="_blank" rel="noopener">This course</a>  </li></ol>]]></content>
     
