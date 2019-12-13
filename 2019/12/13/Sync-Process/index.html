@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="My first task with the Multi Account Containers project is to enable “Sync” with the containers.  We discussed a few different paths here including using the container name as a unique identifier. The">
-<meta name="keywords" content="Outreachy, Mozilla, Multi Account Containers">
+    <meta name="description" content="I’ve already met with people from several teams including the Firefox Privacy and Security team, the containers team, and the sync team to dicuss paths forward with this project. There were many ideas">
+<meta name="keywords" content="Outreachy,Mozilla,Multi Account Containers">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Sync-Process">
 <meta property="og:url" content="http://kendallcorner.com/2019/12/13/Sync-Process/index.html">
 <meta property="og:site_name" content="kendallcorner">
-<meta property="og:description" content="My first task with the Multi Account Containers project is to enable “Sync” with the containers.  We discussed a few different paths here including using the container name as a unique identifier. The">
+<meta property="og:description" content="I’ve already met with people from several teams including the Firefox Privacy and Security team, the containers team, and the sync team to dicuss paths forward with this project. There were many ideas">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-13T19:42:04.665Z">
+<meta property="og:updated_time" content="2019-12-13T20:46:54.972Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sync-Process">
-<meta name="twitter:description" content="My first task with the Multi Account Containers project is to enable “Sync” with the containers.  We discussed a few different paths here including using the container name as a unique identifier. The">
+<meta name="twitter:description" content="I’ve already met with people from several teams including the Firefox Privacy and Security team, the containers team, and the sync team to dicuss paths forward with this project. There were many ideas">
     
     
         
@@ -98,7 +98,7 @@
 
     </div>
     <div id="toc">
-      
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Workflow"><span class="toc-number">1.</span> <span class="toc-text">Workflow</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -128,7 +128,7 @@
       
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Outreachy-Mozilla-Multi-Account-Containers/">Outreachy, Mozilla, Multi Account Containers</a>
+        <a class="tag-link" href="/tags/Mozilla/">Mozilla</a>, <a class="tag-link" href="/tags/Multi-Account-Containers/">Multi Account Containers</a>, <a class="tag-link" href="/tags/Outreachy/">Outreachy</a>
     </div>
 
 
@@ -137,9 +137,37 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p>My first task with the Multi Account Containers project is to enable “Sync” with the containers. </p>
-<p>We discussed a few different paths here including using the container name as a unique identifier.</p>
-<p>The initial sync on versions of the addon that have never been synced will add a uuid for each of the containers and match all assigned sites to the containers</p>
+    <p>I’ve already met with people from several teams including the Firefox Privacy and Security team, the containers team, and the sync team to dicuss paths forward with this project. There were many ideas on what to accomplish here.</p>
+<p>We decided that my first task with the <a href="https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/" target="_blank" rel="noopener">Multi Account Containers</a> project is to enable “Sync” with the containers between browsers that are logged in with the same <a href="https://www.mozilla.org/en-US/firefox/accounts/" target="_blank" rel="noopener">Firefox Account</a>. Sync is a Firefox service that syncs your bookmarks, passwords, open tabs, and history between firefox installs on all your devices. It’s a really handy feature, but unfortunately containers are not currently sycned. Even worse, the site assignments (which are in my opinion the most tedious thing to set up), aren’t even stored in Firefox and so wouldn’t be synced if the containers were.</p>
+<p>We discussed where to add this feature: In the browser or in the extension, and we chose the extension for the sake of getting the project shipped while I am still an intern. Future work here would obviously be to pull the containers and site assignments (and syncing) fully into Firefox itself.</p>
+<p>Paths forward for syncing were also dicussed, including using the container name as a unique identifier. This might cause problems or make it harder to rename or delete a container, so we decided to add a <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier" target="_blank" rel="noopener">uuid</a> for the containers in the MAC extension.</p>
+<h2 id="Workflow"><a href="#Workflow" class="headerlink" title="Workflow"></a>Workflow</h2><p>The initial sync on versions of the addon that have never been synced will </p>
+<ol>
+<li>add a uuid for each of the containers</li>
+<li>flag all assigned sites with that uuid while keeping their contextual identity number</li>
+</ol>
+<p>Currently Firefox Contextual Identities (what the containers are called inside the browser itself) are not given uuids and this could cause collision issues when syncing data. That will need to be updated within firefox at some point. Maybe a furture project for me.</p>
+<ol start="3">
+<li>The new containers with uuids and site assignment data will be stored in sync<ul>
+<li>this must remain less than 100 kB, the sync limit for addons)</li>
+</ul>
+</li>
+</ol>
+<p>When syncing with a previously unsynced Firefox MAC addon, the addon should: </p>
+<ol start="4">
+<li>compare the synced containers with the containers on the browser</li>
+</ol>
+<p>If site assignments are the same for a given container name: </p>
+<ol start="6">
+<li>The containers will be assumed to be the same and will be merged with a single uddid from the synced container</li>
+</ol>
+<p>If the site assignments are different or a synced container is found that is not in the browser:</p>
+<ol start="7">
+<li>a new container will be made on the browser</li>
+</ol>
+<p>After the initial sync, the addon will sync based on uuids and maintain a list of deleted container uuids.</p>
+<hr>
+This blog post is part of the [Outreachy](https://www.outreachy.com) project.
 
   </div>
 </article>
@@ -166,7 +194,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Workflow"><span class="toc-number">1.</span> <span class="toc-text">Workflow</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">

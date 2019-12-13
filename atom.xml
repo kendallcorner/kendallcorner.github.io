@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kendallcorner.com/"/>
-  <updated>2019-12-13T19:42:04.665Z</updated>
+  <updated>2019-12-13T20:46:54.972Z</updated>
   <id>http://kendallcorner.com/</id>
   
   <author>
@@ -21,23 +21,26 @@
     <link href="http://kendallcorner.com/2019/12/13/Sync-Process/"/>
     <id>http://kendallcorner.com/2019/12/13/Sync-Process/</id>
     <published>2019-12-13T18:49:23.000Z</published>
-    <updated>2019-12-13T19:42:04.665Z</updated>
+    <updated>2019-12-13T20:46:54.972Z</updated>
     
-    <content type="html"><![CDATA[<p>My first task with the Multi Account Containers project is to enable “Sync” with the containers. </p><p>We discussed a few different paths here including using the container name as a unique identifier.</p><p>The initial sync on versions of the addon that have never been synced will add a uuid for each of the containers and match all assigned sites to the containers</p>]]></content>
+    <content type="html"><![CDATA[<p>I’ve already met with people from several teams including the Firefox Privacy and Security team, the containers team, and the sync team to dicuss paths forward with this project. There were many ideas on what to accomplish here.</p><p>We decided that my first task with the <a href="https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/" target="_blank" rel="noopener">Multi Account Containers</a> project is to enable “Sync” with the containers between browsers that are logged in with the same <a href="https://www.mozilla.org/en-US/firefox/accounts/" target="_blank" rel="noopener">Firefox Account</a>. Sync is a Firefox service that syncs your bookmarks, passwords, open tabs, and history between firefox installs on all your devices. It’s a really handy feature, but unfortunately containers are not currently sycned. Even worse, the site assignments (which are in my opinion the most tedious thing to set up), aren’t even stored in Firefox and so wouldn’t be synced if the containers were.</p><p>We discussed where to add this feature: In the browser or in the extension, and we chose the extension for the sake of getting the project shipped while I am still an intern. Future work here would obviously be to pull the containers and site assignments (and syncing) fully into Firefox itself.</p><p>Paths forward for syncing were also dicussed, including using the container name as a unique identifier. This might cause problems or make it harder to rename or delete a container, so we decided to add a <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier" target="_blank" rel="noopener">uuid</a> for the containers in the MAC extension.</p><h2 id="Workflow"><a href="#Workflow" class="headerlink" title="Workflow"></a>Workflow</h2><p>The initial sync on versions of the addon that have never been synced will </p><ol><li>add a uuid for each of the containers</li><li>flag all assigned sites with that uuid while keeping their contextual identity number</li></ol><p>Currently Firefox Contextual Identities (what the containers are called inside the browser itself) are not given uuids and this could cause collision issues when syncing data. That will need to be updated within firefox at some point. Maybe a furture project for me.</p><ol start="3"><li>The new containers with uuids and site assignment data will be stored in sync<ul><li>this must remain less than 100 kB, the sync limit for addons)</li></ul></li></ol><p>When syncing with a previously unsynced Firefox MAC addon, the addon should: </p><ol start="4"><li>compare the synced containers with the containers on the browser</li></ol><p>If site assignments are the same for a given container name: </p><ol start="6"><li>The containers will be assumed to be the same and will be merged with a single uddid from the synced container</li></ol><p>If the site assignments are different or a synced container is found that is not in the browser:</p><ol start="7"><li>a new container will be made on the browser</li></ol><p>After the initial sync, the addon will sync based on uuids and maintain a list of deleted container uuids.</p><hr>This blog post is part of the [Outreachy](https://www.outreachy.com) project.]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;My first task with the Multi Account Containers project is to enable “Sync” with the containers. &lt;/p&gt;
-&lt;p&gt;We discussed a few different pat
+        &lt;p&gt;I’ve already met with people from several teams including the Firefox Privacy and Security team, the containers team, and the sync team t
       
     
     </summary>
     
     
     
-      <category term="Outreachy, Mozilla, Multi Account Containers" scheme="http://kendallcorner.com/tags/Outreachy-Mozilla-Multi-Account-Containers/"/>
+      <category term="Outreachy" scheme="http://kendallcorner.com/tags/Outreachy/"/>
+    
+      <category term="Mozilla" scheme="http://kendallcorner.com/tags/Mozilla/"/>
+    
+      <category term="Multi Account Containers" scheme="http://kendallcorner.com/tags/Multi-Account-Containers/"/>
     
   </entry>
   
@@ -46,9 +49,9 @@
     <link href="http://kendallcorner.com/2019/12/13/Outreachy-Application/"/>
     <id>http://kendallcorner.com/2019/12/13/Outreachy-Application/</id>
     <published>2019-12-13T18:34:26.000Z</published>
-    <updated>2019-12-13T19:42:04.665Z</updated>
+    <updated>2019-12-13T20:47:19.649Z</updated>
     
-    <content type="html"><![CDATA[<p>I have wanted to be a programmer for a long time. It was my original major choice, but due to various issues, I didn’t end up going down that path. But I’ve always tried to do a little development on the side or to help with me my job, so when I was laid off from my engineering job in June, I realized I had a few months to really try to train myself up and become a real-live developer. I took some online courses, worked on my own web apps, and got lots of help and advice from my programmer friends. I even tried my hand at some contributions to open source. This was when I was told about the Outreachy program.</p><p>I applied and was accepted to the second round of applications where the applicants get to submit to different projects to figure out which projects they like, and in turn, the project mentors get to figure out which applicants have the needed skills and fit well with their working style. Overall this seems very much like a code interview might be, except that if your work is good it actually gets used in the project. The only downside to this is no time limit was put on this, so people who are  going to school, otherwise employed, or have kids may not have the same available time to make a solid contribution. In that respect, I feel very lucky that my husband has a good job and I can take this time off, not only to apply for Outreachy, but also to try this career change!</p><p>They closed the second round applictaion about a month before the internship started to give the mentors a few weeks to decide. I was ready to hear back right away, but alas, I had to wait! The week of Thanksgiving I heard back that I was accepted on Firefox’s Multi Account Containers Addon project. I am very excited to be working with a company so full of talent like Mozilla.</p>]]></content>
+    <content type="html"><![CDATA[<p>I have wanted to be a programmer for a long time. It was my original major choice, but due to various issues, I didn’t end up going down that path. But I’ve always tried to do a little development on the side or to help me with my job, so when I was laid off from my engineering job in June, I realized I had a few months to really try to train myself up and become a real-live developer. I took some online courses, worked on my own web apps, and got lots of help and advice from my programmer friends. I even tried my hand at some contributions to open source. This was when I was told about the Outreachy program.</p><p>I applied and was accepted to the second round of applications where the applicants get to submit to different projects to figure out which projects they like, and in turn, the project mentors get to figure out which applicants have the needed skills and fit well with their working style. Overall this seems very much like a code interview might be, except that if your work is good it actually gets used in the project. The only downside to this is no time limit was put on this, so people who are  going to school, otherwise employed, or have kids may not have the same available time to make a solid contribution. In that respect, I feel very lucky that my husband has a good job and I can take this time off, not only to apply for Outreachy, but also to try this career change!</p><p>They closed the second round applictaion about a month before the internship started to give the mentors a few weeks to decide. I was ready to hear back right away, but alas, I had to wait! The week of Thanksgiving I heard back that I was accepted on Firefox’s Multi Account Containers Addon project. I am very excited to be working with a company so full of talent like Mozilla.</p><hr>This blog post is part of the [Outreachy](https://www.outreachy.com) project.]]></content>
     
     <summary type="html">
     
@@ -61,7 +64,7 @@
     
     
     
-      <category term="outreachy" scheme="http://kendallcorner.com/tags/outreachy/"/>
+      <category term="Outreachy" scheme="http://kendallcorner.com/tags/Outreachy/"/>
     
   </entry>
   
