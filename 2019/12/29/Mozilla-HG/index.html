@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="kendallcorner">
 <meta property="og:description" content="Some helpful commands for using mercurial with Mozilla Central hg pull Get newest revisions. mozilla-central changes a lot, so this needs to be done at least daily and before any work is started hg up">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-30T22:16:32.593Z">
+<meta property="og:updated_time" content="2019-12-30T22:57:04.442Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Useful Mercurial Commands for Mozilla Central">
 <meta name="twitter:description" content="Some helpful commands for using mercurial with Mozilla Central hg pull Get newest revisions. mozilla-central changes a lot, so this needs to be done at least daily and before any work is started hg up">
@@ -150,7 +150,7 @@
 <p>Final commit message format:<br><code>Bug 577872 - Create WebM versions of Ogg reftests. r=kinetik</code></p>
 <p>You may also want to change your default editor (unless you like using vi or vim). You can do that by adding an evironment variable:<br><code>export HGEDITOR=&lt;your favorite editor&gt;</code></p>
 <p><code>hg revert &lt;filename&gt;</code><br>To remove changes to a given file</p>
-<p><code>hg diff central</code><br>To show changes since central (all commits)</p>
+<p><code>hg diff -r central</code><br>To show changes since central (all commits)</p>
 <p><code>hg update -r &lt;rev&gt;</code><br>To change to a different rev</p>
 <p><code>hg parent</code><br>If you get lost in your revisions–to show which you are on.</p>
 <p>Tests to run:<br>./mach lint -l eslint -o</p>
