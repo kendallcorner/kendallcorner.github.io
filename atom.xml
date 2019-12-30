@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kendallcorner.com/"/>
-  <updated>2019-12-13T20:46:54.972Z</updated>
+  <updated>2019-12-30T22:16:32.593Z</updated>
   <id>http://kendallcorner.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Useful Mercurial Commands for Mozilla Central</title>
+    <link href="http://kendallcorner.com/2019/12/29/Mozilla-HG/"/>
+    <id>http://kendallcorner.com/2019/12/29/Mozilla-HG/</id>
+    <published>2019-12-29T16:59:44.000Z</published>
+    <updated>2019-12-30T22:16:32.593Z</updated>
+    
+    <content type="html"><![CDATA[<p>Some helpful commands for using mercurial with Mozilla Central</p><p><code>hg pull</code></p><p>Get newest revisions. mozilla-central changes a lot, so this needs to be done at least daily and before any work is started</p><p><code>hg update</code></p><p><code>hg wip</code></p><p>Shows a nice graph of your revisions vs the revisions from central. Shows whether you need to rebase</p><p><code>hg status</code></p><p>Shows all files you have changed but not committed</p><p><code>hg status --rev central</code><br><a href="https://stackoverflow.com/questions/8734817/mercurial-generate-file-name-only-diff" target="_blank" rel="noopener">https://stackoverflow.com/questions/8734817/mercurial-generate-file-name-only-diff</a></p><p>Shows all files you have committed (or not commited) that are different from central. I.e. it can show you all the files in your patch at once if you’ve made several revisions</p><p><code>hg commit m &quot;commit message&quot;</code></p><p>mercurial does not have staging. Straight to commit.</p><p><code>hg rebase central</code></p><p>Make sure all your stuff is committed first</p><p><code>hg shelve</code><br><a href="https://www.markheath.net/post/git-stash-for-mercurial-users" target="_blank" rel="noopener">https://www.markheath.net/post/git-stash-for-mercurial-users</a><br>If you don’t want to commit the current changes</p><p><code>hg histedit &lt;rev&gt;</code><br><a href="https://www.mercurial-scm.org/wiki/HisteditExtension" target="_blank" rel="noopener">https://www.mercurial-scm.org/wiki/HisteditExtension</a><br>To squash and/or rename commits</p><p>Final commit message format:<br><code>Bug 577872 - Create WebM versions of Ogg reftests. r=kinetik</code></p><p>You may also want to change your default editor (unless you like using vi or vim). You can do that by adding an evironment variable:<br><code>export HGEDITOR=&lt;your favorite editor&gt;</code></p><p><code>hg revert &lt;filename&gt;</code><br>To remove changes to a given file</p><p><code>hg diff central</code><br>To show changes since central (all commits)</p><p><code>hg update -r &lt;rev&gt;</code><br>To change to a different rev</p><p><code>hg parent</code><br>If you get lost in your revisions–to show which you are on.</p><p>Tests to run:<br>./mach lint -l eslint -o</p><p>./mach lint -l wpt -l wpt_manifest -o</p><p>./mach mochitest browser/components/preferences/in-content/tests/<br>Run the relevant folder here. All Mochitests will take a long time to run.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Some helpful commands for using mercurial with Mozilla Central&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hg pull&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Get newest revisions. mozilla-central c
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Sync-Process</title>
