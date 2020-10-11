@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src https:">
+</head>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Some helpful commands for using mercurial with Mozilla Central hg pull Get newest revisions. mozilla-central changes a lot, so this needs to be done at least daily and before any work is started hg up">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Useful Mercurial Commands for Mozilla Central">
+<meta property="og:url" content="http://kendallcorner.com/2019/12/29/Mozilla-HG/index.html">
+<meta property="og:site_name" content="kendallcorner">
+<meta property="og:description" content="Some helpful commands for using mercurial with Mozilla Central hg pull Get newest revisions. mozilla-central changes a lot, so this needs to be done at least daily and before any work is started hg up">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-30T22:57:04.442Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Useful Mercurial Commands for Mozilla Central">
+<meta name="twitter:description" content="Some helpful commands for using mercurial with Mozilla Central hg pull Get newest revisions. mozilla-central changes a lot, so this needs to be done at least daily and before any work is started hg up">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="https://www.gravatar.com/avatar/6c523d558ab10db7e2c1f3025dc898e9?s=16">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="https://www.gravatar.com/avatar/6c523d558ab10db7e2c1f3025dc898e9?s=192" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Useful Mercurial Commands for Mozilla Central</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+<link rel="alternate" href="/atom.xml" title="kendallcorner" type="application/atom+xml">
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/posts/">Writing</a></li>
+         
+          <li><a href="http://github.com/kendallcorner">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2019/12/13/Sync-Process/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://kendallcorner.com/2019/12/29/Mozilla-HG/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&text=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&title=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&is_video=false&description=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Useful Mercurial Commands for Mozilla Central&body=Check out this article: http://kendallcorner.com/2019/12/29/Mozilla-HG/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&title=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&title=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&title=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&title=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&name=Useful Mercurial Commands for Mozilla Central&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Useful Mercurial Commands for Mozilla Central
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">kendallcorner</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2019-12-29T16:59:44.000Z" itemprop="datePublished">2019-12-29</time>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Some helpful commands for using mercurial with Mozilla Central</p>
+<p><code>hg pull</code></p>
+<p>Get newest revisions. mozilla-central changes a lot, so this needs to be done at least daily and before any work is started</p>
+<p><code>hg update</code></p>
+<p><code>hg wip</code></p>
+<p>Shows a nice graph of your revisions vs the revisions from central. Shows whether you need to rebase</p>
+<p><code>hg status</code></p>
+<p>Shows all files you have changed but not committed</p>
+<p><code>hg status --rev central</code><br><a href="https://stackoverflow.com/questions/8734817/mercurial-generate-file-name-only-diff" target="_blank" rel="noopener">https://stackoverflow.com/questions/8734817/mercurial-generate-file-name-only-diff</a></p>
+<p>Shows all files you have committed (or not commited) that are different from central. I.e. it can show you all the files in your patch at once if you’ve made several revisions</p>
+<p><code>hg commit m &quot;commit message&quot;</code></p>
+<p>mercurial does not have staging. Straight to commit.</p>
+<p><code>hg rebase central</code></p>
+<p>Make sure all your stuff is committed first</p>
+<p><code>hg shelve</code><br><a href="https://www.markheath.net/post/git-stash-for-mercurial-users" target="_blank" rel="noopener">https://www.markheath.net/post/git-stash-for-mercurial-users</a><br>If you don’t want to commit the current changes</p>
+<p><code>hg histedit &lt;rev&gt;</code><br><a href="https://www.mercurial-scm.org/wiki/HisteditExtension" target="_blank" rel="noopener">https://www.mercurial-scm.org/wiki/HisteditExtension</a><br>To squash and/or rename commits</p>
+<p>Final commit message format:<br><code>Bug 577872 - Create WebM versions of Ogg reftests. r=kinetik</code></p>
+<p>You may also want to change your default editor (unless you like using vi or vim). You can do that by adding an evironment variable:<br><code>export HGEDITOR=&lt;your favorite editor&gt;</code></p>
+<p><code>hg revert &lt;filename&gt;</code><br>To remove changes to a given file</p>
+<p><code>hg diff -r central</code><br>To show changes since central (all commits)</p>
+<p><code>hg update -r &lt;rev&gt;</code><br>To change to a different rev</p>
+<p><code>hg parent</code><br>If you get lost in your revisions–to show which you are on.</p>
+<p>Tests to run:<br>./mach lint -l eslint -o</p>
+<p>./mach lint -l wpt -l wpt_manifest -o</p>
+<p>./mach mochitest browser/components/preferences/in-content/tests/<br>Run the relevant folder here. All Mochitests will take a long time to run.</p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/posts/">Writing</a></li>
+         
+          <li><a href="http://github.com/kendallcorner">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://kendallcorner.com/2019/12/29/Mozilla-HG/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&text=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&title=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&is_video=false&description=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Useful Mercurial Commands for Mozilla Central&body=Check out this article: http://kendallcorner.com/2019/12/29/Mozilla-HG/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&title=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&title=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&title=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&title=Useful Mercurial Commands for Mozilla Central"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://kendallcorner.com/2019/12/29/Mozilla-HG/&name=Useful Mercurial Commands for Mozilla Central&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2020 Kendall Werts
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/posts/">Writing</a></li>
+         
+          <li><a href="http://github.com/kendallcorner">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-33031016-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
