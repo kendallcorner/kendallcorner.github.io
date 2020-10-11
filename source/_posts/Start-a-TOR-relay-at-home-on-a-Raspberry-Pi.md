@@ -93,4 +93,6 @@ In about 3 hours, your relay should be listed in the registry. In the [Relay Sea
 
 When I was done, I also went into the raspberry pi settings and switched it to boot up to CLI instead of desktop, since I will be running it without a monitor from now on.rap
 
+
+
 And that's it. I hope you try it out! Happy Torring!
