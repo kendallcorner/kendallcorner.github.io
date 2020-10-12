@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>kendallcorner</title>
+  <title>Kendall Codes</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://kendallcorner.com/"/>
+  <link href="http://kendallwerts.com/"/>
   <updated>2020-10-11T21:34:52.041Z</updated>
-  <id>http://kendallcorner.com/</id>
+  <id>http://kendallwerts.com/</id>
   
   <author>
     <name>Kendall Werts</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Start a TOR relay at home on a Raspberry Pi</title>
-    <link href="http://kendallcorner.com/2020/10/11/Start-a-TOR-relay-at-home-on-a-Raspberry-Pi/"/>
-    <id>http://kendallcorner.com/2020/10/11/Start-a-TOR-relay-at-home-on-a-Raspberry-Pi/</id>
+    <link href="http://kendallwerts.com/2020/10/11/Start-a-TOR-relay-at-home-on-a-Raspberry-Pi/"/>
+    <id>http://kendallwerts.com/2020/10/11/Start-a-TOR-relay-at-home-on-a-Raspberry-Pi/</id>
     <published>2020-10-11T18:45:49.000Z</published>
     <updated>2020-10-11T21:34:52.041Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>Useful Mercurial Commands for Mozilla Central</title>
-    <link href="http://kendallcorner.com/2019/12/29/Mozilla-HG/"/>
-    <id>http://kendallcorner.com/2019/12/29/Mozilla-HG/</id>
+    <link href="http://kendallwerts.com/2019/12/29/Mozilla-HG/"/>
+    <id>http://kendallwerts.com/2019/12/29/Mozilla-HG/</id>
     <published>2019-12-29T16:59:44.000Z</published>
     <updated>2020-10-11T21:33:57.948Z</updated>
     
@@ -64,8 +64,8 @@
   
   <entry>
     <title>Sync-Process</title>
-    <link href="http://kendallcorner.com/2019/12/13/Sync-Process/"/>
-    <id>http://kendallcorner.com/2019/12/13/Sync-Process/</id>
+    <link href="http://kendallwerts.com/2019/12/13/Sync-Process/"/>
+    <id>http://kendallwerts.com/2019/12/13/Sync-Process/</id>
     <published>2019-12-13T18:49:23.000Z</published>
     <updated>2020-10-11T21:33:57.956Z</updated>
     
@@ -82,18 +82,18 @@
     
     
     
-      <category term="Outreachy" scheme="http://kendallcorner.com/tags/Outreachy/"/>
+      <category term="Outreachy" scheme="http://kendallwerts.com/tags/Outreachy/"/>
     
-      <category term="Mozilla" scheme="http://kendallcorner.com/tags/Mozilla/"/>
+      <category term="Mozilla" scheme="http://kendallwerts.com/tags/Mozilla/"/>
     
-      <category term="Multi Account Containers" scheme="http://kendallcorner.com/tags/Multi-Account-Containers/"/>
+      <category term="Multi Account Containers" scheme="http://kendallwerts.com/tags/Multi-Account-Containers/"/>
     
   </entry>
   
   <entry>
     <title>Outreachy Application Process</title>
-    <link href="http://kendallcorner.com/2019/12/13/Outreachy-Application/"/>
-    <id>http://kendallcorner.com/2019/12/13/Outreachy-Application/</id>
+    <link href="http://kendallwerts.com/2019/12/13/Outreachy-Application/"/>
+    <id>http://kendallwerts.com/2019/12/13/Outreachy-Application/</id>
     <published>2019-12-13T18:34:26.000Z</published>
     <updated>2020-10-11T21:33:57.948Z</updated>
     
@@ -110,14 +110,14 @@
     
     
     
-      <category term="Outreachy" scheme="http://kendallcorner.com/tags/Outreachy/"/>
+      <category term="Outreachy" scheme="http://kendallwerts.com/tags/Outreachy/"/>
     
   </entry>
   
   <entry>
     <title>Welcome</title>
-    <link href="http://kendallcorner.com/2019/09/10/welcome/"/>
-    <id>http://kendallcorner.com/2019/09/10/welcome/</id>
+    <link href="http://kendallwerts.com/2019/09/10/welcome/"/>
+    <id>http://kendallwerts.com/2019/09/10/welcome/</id>
     <published>2019-09-10T19:56:22.000Z</published>
     <updated>2020-10-11T21:33:57.960Z</updated>
     
@@ -138,8 +138,8 @@
   
   <entry>
     <title>Developing a programming path</title>
-    <link href="http://kendallcorner.com/2019/09/10/programming-path/"/>
-    <id>http://kendallcorner.com/2019/09/10/programming-path/</id>
+    <link href="http://kendallwerts.com/2019/09/10/programming-path/"/>
+    <id>http://kendallwerts.com/2019/09/10/programming-path/</id>
     <published>2019-09-10T19:54:21.000Z</published>
     <updated>2020-10-11T21:33:57.960Z</updated>
     
@@ -160,8 +160,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://kendallcorner.com/2019/09/10/hello-world/"/>
-    <id>http://kendallcorner.com/2019/09/10/hello-world/</id>
+    <link href="http://kendallwerts.com/2019/09/10/hello-world/"/>
+    <id>http://kendallwerts.com/2019/09/10/hello-world/</id>
     <published>2019-09-10T19:50:00.000Z</published>
     <updated>2020-10-11T21:33:57.960Z</updated>
     
