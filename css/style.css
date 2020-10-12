@@ -322,7 +322,7 @@
   font-size: 1.5em;
   font-style: normal;
   font-weight: 700;
-  color: #2bbc8a;
+  color: #c71c08;
   margin-top: 3rem;
   margin-bottom: 1rem;
   display: block;
@@ -585,7 +585,7 @@ body {
   font-size: 0.8rem;
   font-style: normal;
   font-weight: 200;
-  color: #2bbc8a;
+  color: #c71c08;
 }
 #header #nav ul {
   list-style-type: none;
@@ -601,13 +601,13 @@ body {
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: 100% 6px;
-  background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a);
+  background-image: linear-gradient(transparent, transparent 5px, #c71c08 5px, #c71c08);
 }
 #header #nav ul li {
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
-  border-right: 1px dotted #2bbc8a;
+  border-right: 1px dotted #c71c08;
 }
 #header #nav ul .icon {
   display: none;
@@ -690,7 +690,7 @@ body {
   margin-right: 2rem;
 }
 #header-post #menu-icon:hover {
-  color: #2bbc8a;
+  color: #c71c08;
 }
 #header-post #menu-icon-tablet {
   float: right;
@@ -698,7 +698,7 @@ body {
   margin-right: 2rem;
 }
 #header-post #menu-icon-tablet:hover {
-  color: #2bbc8a;
+  color: #c71c08;
 }
 #header-post #top-icon-tablet {
   margin-left: 15px;
@@ -708,10 +708,10 @@ body {
   position: fixed;
 }
 #header-post #top-icon-tablet:hover {
-  color: #2bbc8a;
+  color: #c71c08;
 }
 #header-post .active {
-  color: #2bbc8a;
+  color: #c71c08;
 }
 #header-post #menu {
   visibility: hidden;
@@ -722,7 +722,7 @@ body {
   font-size: 0.8rem;
   font-style: normal;
   font-weight: 200;
-  color: #2bbc8a;
+  color: #c71c08;
 }
 #header-post #nav ul {
   line-height: 15px;
@@ -735,10 +735,10 @@ body {
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: 100% 6px;
-  background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a);
+  background-image: linear-gradient(transparent, transparent 5px, #c71c08 5px, #c71c08);
 }
 #header-post #nav ul li {
-  border-right: 1px dotted #2bbc8a;
+  border-right: 1px dotted #c71c08;
 }
 #header-post #nav ul li:last-child {
   border-right: 0;
@@ -793,7 +793,7 @@ body {
 }
 #header-post #toc .toc-level-2:before {
   content: "#";
-  color: #2bbc8a;
+  color: #c71c08;
 }
 #header-post #toc .toc-level-3 {
   font-size: 0.7rem;
@@ -881,14 +881,14 @@ body {
   text-align: center;
 }
 #footer-post #nav-footer a {
-  color: #2bbc8a;
+  color: #c71c08;
   font-size: 1rem;
 }
 #footer-post #nav-footer a:hover {
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: 100% 6px;
-  background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a);
+  background-image: linear-gradient(transparent, transparent 5px, #c71c08 5px, #c71c08);
 }
 #footer-post #nav-footer ul {
   list-style-type: none;
@@ -910,7 +910,7 @@ body {
   width: 100%;
 }
 #footer-post #actions-footer a {
-  color: #2bbc8a;
+  color: #c71c08;
 }
 #footer-post #actions-footer ul {
   list-style-type: none;
@@ -965,7 +965,7 @@ body {
 }
 #footer-post #toc-footer .toc-level-2:before {
   content: "#";
-  color: #2bbc8a;
+  color: #c71c08;
 }
 #footer-post #toc-footer .toc-level-3 {
   font-size: 0.7rem;
@@ -1064,7 +1064,7 @@ article header .postdate {
 }
 article .content h2:before {
   content: "#";
-  color: #2bbc8a;
+  color: #c71c08;
   position: absolute;
   left: -1rem;
   top: -4px;
@@ -1264,7 +1264,7 @@ article .content .caption {
   padding: 4px 6px;
   text-decoration: none;
   border-radius: 5px;
-  background-color: #2bbc8a;
+  background-color: #c71c08;
   background-image: none;
 }
 .pagination a:hover {
@@ -1287,7 +1287,7 @@ article .content .caption {
   -webkit-appearance: none;
 }
 .search-input:focus {
-  border: solid 1px #2bbc8a;
+  border: solid 1px #c71c08;
 }
 #search-result ul.search-result-list {
   list-style-type: none;
